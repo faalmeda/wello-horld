@@ -6,3 +6,20 @@ def move_count(step):
     else:
         return
     return -step_no if step[0] == 'L' else step_no
+
+def main_day1p1(input_list, start_pos=0):
+    at_zero = 0
+    if input_list:
+        for i in input_list:
+            start_pos += move_count(i)
+            if start_pos == 0:
+                at_zero += 1
+            elif start_pos % 100 == 0:
+                at_zero += 1
+        return at_zero
+    else:
+        return 0
+    
+if __name__ == '__main__':
+    sample_list = ['L10', 'R20', 'L10', 'R10', 'L20', 'R10', 'L10', 'R20']
+    main_day1p1(sample_list)
