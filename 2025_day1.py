@@ -25,4 +25,5 @@ if __name__ == '__main__':
     
     with open('adventday1.txt', 'r') as f:
         lines = f.read().splitlines()
-    main_day1p1(lines)
+
+    print(main_day1p1(lines))
