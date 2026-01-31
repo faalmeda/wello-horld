@@ -21,7 +21,7 @@ def main_day1p1(input_list, start_pos=0):
         return 0
     
 if __name__ == '__main__':
-    puzzle = 'wello-horld/adventday1.txt'
+    puzzle = 'D:/0 Coding Projects/wello-horld/day1/adventday1.txt'
     
     with open('adventday1.txt', 'r') as f:
         lines = f.read().splitlines()
