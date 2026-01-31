@@ -21,5 +21,8 @@ def main_day1p1(input_list, start_pos=0):
         return 0
     
 if __name__ == '__main__':
-    sample_list = ['L10', 'R20', 'L10', 'R10', 'L20', 'R10', 'L10', 'R20']
-    main_day1p1(sample_list)
+    puzzle = 'wello-horld/adventday1.txt'
+    
+    with open('adventday1.txt', 'r') as f:
+        lines = f.read().splitlines()
+    main_day1p1(lines)
